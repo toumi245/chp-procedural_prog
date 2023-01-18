@@ -1,0 +1,23 @@
+ALGORITHM Dot product
+PROCEDURE Dot product (v1,v2:STRING[50])
+VAR
+  i,n:INTEGER;
+  v1,v2:STRING[50];
+BEGIN
+PS:=0;
+FOR i FROM 0 TO n.length -1 STEP 1 DO
+    ps:=ps+v1[i]*v2[i]
+END_FOR
+
+PROCEDURE orthogonal(vectors : arrays of array)
+FOR i FROM 0 TO vectors.length STEP 1  DO
+FOR j:=i+1 FROM 0 TO vectors.length STEP 1  DO
+    ps:= (Dot product(vectors[i],vectors[j]))
+    IF (ps==0) THEN
+        write (v1 "and" v2 "are orthogonal");
+        else:
+    write((v1 "and" v2 "are not orthogonal")); 
+    END_IF
+END_FOR
+END_FOR
+END
